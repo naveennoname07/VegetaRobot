@@ -8,6 +8,14 @@ def get_user_list(config, key):
               'r') as json_file:
         return json.load(json_file)[key]
 
+id_pattern = re.compile(r'^.\d+$')
+def is_enabled(value, default):
+    if value.lower() in ["true", "yes", "1", "enable", "y"]:
+        return True
+    elif value.lower() in ["false", "no", "0", "disable", "n"]:
+        return False
+    else:
+        return default
 
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
