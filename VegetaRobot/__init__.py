@@ -1,8 +1,10 @@
+import re
 import logging
 import os
 import sys
 import time
 import spamwatch
+from os import environ
 from telethon.sessions import StringSession
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
