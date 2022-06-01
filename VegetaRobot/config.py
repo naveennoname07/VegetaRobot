@@ -1,7 +1,7 @@
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 import json #by ctzfamioy
 import os
-
+from os import environ
 
 def get_user_list(config, key):
     with open('{}/VegetaRobot/{}'.format(os.getcwd(), config),
