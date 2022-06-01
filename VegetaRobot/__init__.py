@@ -91,6 +91,9 @@ if ENV:
     BAN_STICKER = os.environ.get('BAN_STICKER',
                                  'CAADAgADOwADPPEcAXkko5EB3YGYAg')
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
+    DATABASE_URI = environ.get('DATABASE_URI', "")
+    DATABASE_NAME = environ.get('DATABASE_NAME', "")
+    COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
     ARQ_API_URL = os.environ.get("ARQ_API_URL", None)
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", None)
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", "") # From:- https://openweathermap.org/api
