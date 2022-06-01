@@ -65,7 +65,7 @@ class Config(object):
 
 # MongoDB information
     DATABASE_URI = environ.get('DATABASE_URI', "")
-    DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+    DATABASE_NAME = environ.get('DATABASE_NAME', "")
     COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
     LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
