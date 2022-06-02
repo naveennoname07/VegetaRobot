@@ -82,6 +82,7 @@ if ENV:
     INFOPIC = bool(os.environ.get('INFOPIC', False))
     EVENT_LOGS = os.environ.get('EVENT_LOGS', None)
     WEBHOOK = bool(os.environ.get('WEBHOOK', False))
+    SESSION = os.environ.get('SESSION', 'Media_search')
     ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMINS', '').split()]
     CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in os.environ.get('CHANNELS', '0').split()]
     auth_users = [int(user) if id_pattern.search(user) else user for user in os.environ.get('AUTH_USERS', '').split()]
