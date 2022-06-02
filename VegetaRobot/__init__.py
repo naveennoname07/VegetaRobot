@@ -69,6 +69,9 @@ if ENV:
         
    
     INFOPIC = bool(os.environ.get('INFOPIC', False))
+    DATABASE_URI = os.environ.get('DATABASE_URI', "")
+    DATABASE_NAME = os.environ.get('DATABASE_NAME', "Rajappan")
+    COLLECTION_NAME = os.environ.get('COLLECTION_NAME', 'Telegram_files')
     EVENT_LOGS = os.environ.get('EVENT_LOGS', None)
     WEBHOOK = bool(os.environ.get('WEBHOOK', False))
     URL = os.environ.get('URL', "")  # Does not contain token
