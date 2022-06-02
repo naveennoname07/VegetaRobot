@@ -15,11 +15,11 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 7126006  # integer value, dont use ""
-    API_HASH = "f92b05be529835381859ead64a195fa2"
-    TOKEN = "2128359921:AAFo-u0Y0e3ZNh2JScMGYoe9oy2UBQuur_4"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1491497760  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "ctzfamily"
+    API_ID = 5235234  # integer value, dont use ""
+    API_HASH = "f91f615b5a48bf114d5ba154f1e1ae8d"
+    TOKEN = "5164589130:AAFqgexozbDv60gOSzh59AmQ4qOEb5uLFgI"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 2107036689  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "Naveen_TG"
     SUPPORT_CHAT = 'vegetasupport'  #Your own group for support, do not add the @
     UPDATES_CHANNEL = 'vegetaUpdates' #Your own channel for Updates of bot, Do not add @
     JOIN_LOGGER = -1001543354286  #Prints any new group the bot is added to, prints just the name and ID.
@@ -35,7 +35,7 @@ class Config(object):
     URL = None
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key -
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
-    BOT_ID = "2128359921"
+    BOT_ID = "5164589130"
     
     DRAGONS = get_user_list('elevated_users.json', 'sudos')
     LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
