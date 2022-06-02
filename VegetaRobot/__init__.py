@@ -87,8 +87,7 @@ if ENV:
     STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', False))
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     WORKERS = int(os.environ.get('WORKERS', 8))
-    BAN_STICKER = os.environ.get('BAN_STICKER',
-                                 'CAADAgADOwADPPEcAXkko5EB3YGYAg')
+    BAN_STICKER = os.environ.get('BAN_STICKER', 'CAADAgADOwADPPEcAXkko5EB3YGYAg')
     DATABASE_URI = environ.get('DATABASE_URI', "")
     DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
     COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
