@@ -38,7 +38,8 @@ class Config(object):
     BOT_ID = "2128359921"
     
     DRAGONS = get_user_list('elevated_users.json', 'sudos')
-
+    LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
+    SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
     DEV_USERS = get_user_list('elevated_users.json', 'devs')
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     DEMONS = get_user_list('elevated_users.json', 'supports')
