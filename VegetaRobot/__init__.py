@@ -1,6 +1,7 @@
 #credits goes to Ctzfamily-Nandha
 import logging
 import os
+import re
 import sys
 import time
 import spamwatch
